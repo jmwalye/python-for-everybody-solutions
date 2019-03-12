@@ -29,10 +29,11 @@ while True:								#Stays in loop until break
 	if input_number == 'done' : break	#Exits the loop
 	try:
 		number = float(input_number)	#Only allows input floats
+		count = count + 1					#Counter FOR ONLY VALID INPUTS
 	except:
 		print('Invalid input')
+	##count = count + 1					#Counter
 
-	count = count + 1					#Counter
 	total = total + number				#Running total
 	
 average = total / count					#Computes the average
